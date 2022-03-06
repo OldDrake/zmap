@@ -19,16 +19,17 @@ ZMap's sister project that performs stateful application-layer handshakes.
 Installation
 ------------
 
-The latest stable release of ZMap is version 2.1.1 and supports Linux, macOS, and
-BSD. However, the release was tagged in 2015, and since then quite a bit has changed. Accordingly,
-_we strongly encourage researchers to use [ZMap 3.0.0 Beta 1](https://github.com/zmap/zmap/releases/tag/v3.0.0-beta1)._
+if you want to use zmap for rdns scanning, you have to install this version of zmap from source.
 
 **Instructions on building ZMap from source** can be found in [INSTALL](INSTALL.md).
 
 Usage
 -----
 
-A guide to using ZMap is found in our [GitHub Wiki](https://github.com/zmap/zmap/wiki).
+To scan recursive dns resolvers, you have to use the udp module and csv4rdns output module, 
+the data field and saddr field must be specified in the output fields argument. Here is an example below.
+
+  zmap -M udp -p 53 --probe-args=file:examples/udp-probes/dns_53_queryAwww.google.com.pkt -o csv4rdns -O result.csv --output-fields="saddr,data" 8.8.8.8
 
 License and Copyright
 ---------------------
