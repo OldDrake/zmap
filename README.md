@@ -29,7 +29,7 @@ Usage
 To scan recursive dns resolvers, you have to use the udp module and csv4rdns output module, 
 the data field and saddr field must be specified in the output fields argument. Here is an example below.
 
-    zmap -M udp -p 53 --probe-args=file:examples/udp-probes/dns_53_queryAwww.google.com.pkt -o csv4rdns -O result.csv --output-fields="saddr,data" 8.8.8.8
+    zmap -M udp -p 53 --probe-args=file:examples/udp-probes/dns_53_queryAwww.google.com.pkt -O csv4rdns -o result.csv --output-fields="saddr,data" 8.8.8.8
 
 License and Copyright
 ---------------------
