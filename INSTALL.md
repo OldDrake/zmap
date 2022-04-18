@@ -32,7 +32,7 @@ Install the required dependencies with the following commands.
 
 * On Debian-based systems (including Ubuntu):
    ```sh
-   sudo apt-get install build-essential cmake libgmp3-dev gengetopt libpcap-dev flex byacc libjson-c-dev pkg-config libunistring-dev
+   sudo apt-get install build-essential cmake libgmp3-dev gengetopt libpcap-dev flex byacc libjson-c-dev pkg-config libunistring-dev libmysqlclient-dev
    ```
 
 * On RHEL- and Fedora-based systems (including CentOS):
