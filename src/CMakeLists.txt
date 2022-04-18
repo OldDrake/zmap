@@ -12,6 +12,7 @@ set(EXTRA_PROBE_MODULES
 
 # ADD YOUR OUTPUT MODULE HERE
 set(EXTRA_OUTPUT_MODULES
+    output_module/module_sql.c
 )
 
 set(OUTPUT_MODULE_SOURCES
@@ -217,6 +218,7 @@ target_link_libraries(
     zmaplib
     ${PFRING_LIBRARIES}
     pcap gmp m unistring
+    mysqlclient
     ${DNET_LIBRARIES}
     ${JSON_LIBRARIES}
 )
@@ -245,6 +247,7 @@ target_link_libraries(
     zmaplib
     ${PFRING_LIBRARIES}
     pcap gmp m unistring
+    mysqlclient
     ${DNET_LIBRARIES}
     ${JSON_LIBRARIES}
 )
