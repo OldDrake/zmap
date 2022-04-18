@@ -40,7 +40,7 @@ the data field and saddr field must be specified in the output fields argument. 
     
 To save the outputs into mysql, use the following cmd:
 
-    sudo zmap -M udp -p 53 --probe-args=file:examples/udp-probes/dns10.pkt -O sql -o localhost:root:mdk199961:rdns_scan:zmap_result --output-fields="saddr,data" --output-filter="repeat=0" 1.1.1.1
+    sudo zmap -M udp -p 53 --probe-args=file:examples/udp-probes/dns10.pkt -O sql -o localhost:root:root:rdns_scan:zmap_result --output-fields="saddr,data" --output-filter="repeat=0" 1.1.1.1
     
 the -o argument is in the format of addr:user:pwd:database:table indicating the sql information instead of the filename.
 
