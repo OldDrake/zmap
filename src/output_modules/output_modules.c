@@ -14,11 +14,13 @@
 extern output_module_t module_csv_file;
 extern output_module_t module_json_file;
 extern output_module_t module_csv4rdns_file;
+extern output_module_t module_sql_file;
 
 output_module_t *output_modules[] = {
 	&module_csv_file,
 	&module_json_file,
 	&module_csv4rdns_file,
+	&moudle_sql_file,
     // ADD YOUR MODULE HERE
 };
 
